@@ -27,5 +27,5 @@ $ 나중에 시간나면 적어주세여
 $ python3 utils/video_2_rosbag.py
 ```
 
-### link
+### competetion link
 http://futurecar.cafe24.com/core/?cid=101&uid=6&role=view#
