@@ -14,7 +14,7 @@ $ sudo apt-get install ros-noetic-rosserial
 ```bash
 $ 나중에 시간나면 적어주세여
 ```
-### for lane detection node (rosserial package)
+### for lane detection node (sliding windows algorithm)
 ```bash
 $ 나중에 시간나면 적어주세여
 ```
