@@ -12,11 +12,11 @@ $ sudo apt-get install ros-noetic-rosserial
 ## launch
 ### for arduino node (rosserial package)
 ```bash
-$ 나중에 시간나면 적어주세여
+$ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0
 ```
 ### for lane detection node (sliding windows algorithm)
 ```bash
-$ 나중에 시간나면 적어주세여
+$ roslaunch lane_detection lane_detection.launch
 ```
 
 ## etc
