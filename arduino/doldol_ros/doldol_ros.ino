@@ -23,15 +23,15 @@
 #define CH4_PULSE_PIN           20
 
 #define ACCEL_OFFSET            0.07
-#define STEER_OFFSET            0.13
+#define STEER_OFFSET            0.0
 #define SIGNAL_THRESHOLD        0.1
        
-#define STEER_DETECT_MAX        410
-#define STEER_DETECT_MIN        772
-#define MAX_STEER_TIRE_DEG      19.85
-#define KP                      0.17
-#define KI                      0.0
-#define KD                      0.0
+#define STEER_DETECT_MAX        410    // rIght max steer
+#define STEER_DETECT_MIN         749    // left max steer
+#define MAX_STEER_TIRE_DEG      20.09
+#define KP                      0.2
+#define KI                       0
+#define KD                     0
 
 volatile long g_steering_edge_now_us = DETECTION_ERR;
 volatile long g_steering_edge_before_us = DETECTION_ERR;
@@ -269,7 +269,7 @@ void loop() {
 
 
   float throttle_input = Mapping(accel_val, 1000.0, 2000.0, -1.0, 1.0);
-  float steer_input = Mapping(steering_val, 1000.0, 2000.0, -1.0, 1.0); 
+  float steer_input = Mapping(steering_val, 1224.0, 1736.0, -1.0, 1.0);     //1250,1750   //1000,2000
 
   // Serial.print(throttle_input);
   // Serial.print("\t");
